@@ -25,15 +25,33 @@ O objetivo deste projeto é aplicar fundamentos essenciais da linguagem Python d
 - **Persistência em JSON e `pathlib`:** Leitura e escrita segura de arquivos com `Path`, `json.load` e `json.dump`, além de tratamento de exceções (`try/except`).
 - **Ordenação customizada:** Uso de `sorted(..., key=..., reverse=True)` para ordenar o ranking do maior para o menor.
 
+## Estrutura do Projeto
+
+```text
+jogo-da-forca-python/
+├── data/
+│   └── ranking.json          # Criado automaticamente ao salvar pontuações
+├── src/
+│   ├── __init__.py
+│   ├── game.py               # Regras do jogo da forca e lógica de pontuação
+│   ├── ranking.py            # Leitura, salvamento e ordenação do ranking
+│   └── words.py              # Banco de palavras categorizadas
+├── main.py                   # Ponto de entrada e menu principal
+├── README.md                 # Documentação do projeto no GitHub
+└── .gitignore                # Arquivos ignorados pelo Git
+```
+
 ## Como Executar
 
 ```bash
-git clone [https://github.com/nicoalscalegari/jogo-da-forca-python.git](https://github.com/nicoalscalegari/jogo-da-forca-python.git)
+git clone https://github.com/nicoalscalegari/jogo-da-forca-python.git
 cd jogo-da-forca-python
 python main.py
+```
 
 ## Exemplo de Uso
 
+```text
 === JOGO DA FORCA ===
 1. Jogar (Programacao)
 2. Jogar (Tecnologia)
@@ -50,7 +68,7 @@ Escolha uma opcao: 1
           |
           |
     =========
-    
+
 Palavra: _ _ _ _ _ _ _ _
 Chances restantes: 6/6
 Digite uma letra: a
@@ -81,3 +99,4 @@ Escolha uma opcao: 3
  2o | Lucas              |  135 pts | Palavra: algoritmo
  3o | Marina             |   90 pts | Palavra: iteracao
 =========================================
+```
