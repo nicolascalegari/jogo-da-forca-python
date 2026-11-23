@@ -44,7 +44,7 @@ jogo-da-forca-python/
 ## Como Executar
 
 ```bash
-git clone https://github.com/nicoalscalegari/jogo-da-forca-python.git
+git clone https://github.com/nicolascalegari/jogo-da-forca-python.git
 cd jogo-da-forca-python
 python main.py
 ```
